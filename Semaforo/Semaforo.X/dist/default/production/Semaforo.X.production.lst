@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V3.10 build 20250813170317 
-                                                                                               Mon Sep 14 19:50:04 2026
+                                                                                               Mon Sep 14 20:04:17 2026
 
 Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1 
      1                           	processor	16F628A
@@ -154,7 +154,7 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    148 ;;
    149 ;; *************** function _main *****************
    150 ;; Defined at:
-   151 ;;		line 20 in file "main.c"
+   151 ;;		line 27 in file "main.c"
    152 ;; Parameters:    Size  Location     Type
    153 ;;		None
    154 ;; Auto vars:     Size  Location     Type
@@ -189,23 +189,23 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    183                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
    184                           
    185                           
-   186                           ;main.c: 22:     configuracao();
+   186                           ;main.c: 29:     configuracao();
    187     07C8  27C4               	fcall	_configuracao
    188     07C9                     l564:
    189                           
-   190                           ;main.c: 25:     {;main.c: 26:         PORTB = 0x04;
+   190                           ;main.c: 32:     {;main.c: 33:         PORTB = 0x04;
    191     07C9  3004               	movlw	4
    192     07CA  1283               	bcf	3,5	;RP0=0, select bank0
    193     07CB  1303               	bcf	3,6	;RP1=0, select bank0
    194     07CC  0086               	movwf	6	;volatile
    195     07CD                     l566:
    196                           
-   197                           ;main.c: 27:         _delay((unsigned long)((1500)*(4000000/4000.0)));
-   198     07CD  3008               	movlw	8
+   197                           ;main.c: 34:         _delay((unsigned long)((2500)*(4000000/4000.0)));
+   198     07CD  300D               	movlw	13
    199     07CE  00F2               	movwf	??_main+2
-   200     07CF  309D               	movlw	157
+   200     07CF  30AF               	movlw	175
    201     07D0  00F1               	movwf	??_main+1
-   202     07D1  3005               	movlw	5
+   202     07D1  30B6               	movlw	182
    203     07D2  00F0               	movwf	??_main
    204     07D3                     u17:
    205     07D3  0BF0               	decfsz	??_main,f
@@ -214,17 +214,17 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    208     07D6  2FD3               	goto	u17
    209     07D7  0BF2               	decfsz	??_main+2,f
    210     07D8  2FD3               	goto	u17
-   211     07D9  2FDA               	nop2
+   211     07D9  0000               	nop
    212     07DA                     l568:
    213                           
-   214                           ;main.c: 28:         PORTB = 0x02;
+   214                           ;main.c: 35:         PORTB = 0x02;
    215     07DA  3002               	movlw	2
    216     07DB  1283               	bcf	3,5	;RP0=0, select bank0
    217     07DC  1303               	bcf	3,6	;RP1=0, select bank0
    218     07DD  0086               	movwf	6	;volatile
    219     07DE                     l570:
    220                           
-   221                           ;main.c: 29:         _delay((unsigned long)((500)*(4000000/4000.0)));
+   221                           ;main.c: 36:         _delay((unsigned long)((500)*(4000000/4000.0)));
    222     07DE  3003               	movlw	3
    223     07DF  00F2               	movwf	??_main+2
    224     07E0  308A               	movlw	138
@@ -241,14 +241,14 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    235     07EA  2FEB               	nop2
    236     07EB                     l572:
    237                           
-   238                           ;main.c: 30:         PORTB = 0x01;
+   238                           ;main.c: 37:         PORTB = 0x01;
    239     07EB  3001               	movlw	1
    240     07EC  1283               	bcf	3,5	;RP0=0, select bank0
    241     07ED  1303               	bcf	3,6	;RP1=0, select bank0
    242     07EE  0086               	movwf	6	;volatile
    243     07EF                     l574:
    244                           
-   245                           ;main.c: 31:         _delay((unsigned long)((1500)*(4000000/4000.0)));
+   245                           ;main.c: 38:         _delay((unsigned long)((1500)*(4000000/4000.0)));
    246     07EF  3008               	movlw	8
    247     07F0  00F2               	movwf	??_main+2
    248     07F1  309D               	movlw	157
@@ -264,7 +264,7 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    258     07FA  2FF5               	goto	u37
    259     07FB  2FFC               	nop2
    260                           
-   261                           ;main.c: 32:     }
+   261                           ;main.c: 39:     }
    262     07FC  2FC9               	goto	l564
    263     07FD  2800               	ljmp	start
    264     07FE                     __end_of_main:
@@ -273,7 +273,7 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    267     07C4                     __ptext1:	
    268 ;; *************** function _configuracao *****************
    269 ;; Defined at:
-   270 ;;		line 15 in file "main.c"
+   270 ;;		line 22 in file "main.c"
    271 ;; Parameters:    Size  Location     Type
    272 ;;		None
    273 ;; Auto vars:     Size  Location     Type
@@ -308,7 +308,7 @@ Microchip MPLAB XC8 C Compiler v3.10 (Free license) build 20250813170317 Og1
    302                           ; Regs used in _configuracao: [status,2]
    303                           
    304                           
-   305                           ;main.c: 17:     TRISB = 0x00;
+   305                           ;main.c: 24:     TRISB = 0x00;
    306     07C4  1683               	bsf	3,5	;RP0=1, select bank1
    307     07C5  1303               	bcf	3,6	;RP1=0, select bank1
    308     07C6  0186               	clrf	6	;volatile
@@ -417,7 +417,7 @@ DATA                 0      0       3      0.0%
 
 
 Microchip Technology PIC Macro Assembler V3.10 build 20250813170317 
-Symbol Table                                                                                   Mon Sep 14 19:50:04 2026
+Symbol Table                                                                                   Mon Sep 14 20:04:17 2026
 
                       l9 07C7            ?_configuracao 0070                       u17 07D3  
                      u27 07E4                       u37 07F5                      l560 07C4  

@@ -11,21 +11,21 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"15 C:\Users\rever\Documents\github\Microcontroladores\Semaforo\Semaforo.X\main.c
+"22 C:\Users\rever\Documents\github\Microcontroladores\Semaforo\Semaforo.X\main.c
 [v _configuracao configuracao `(v  1 e 1 0 ]
-"20
+"27
 [v _main main `(v  1 e 1 0 ]
 "212 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16Fxxx_DFP/1.8.167/xc8\pic\include\proc/pic16f628a.h
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]
 "953
 [v _TRISB TRISB `VEuc  1 e 1 @134 ]
-"20 C:\Users\rever\Documents\github\Microcontroladores\Semaforo\Semaforo.X\main.c
+"27 C:\Users\rever\Documents\github\Microcontroladores\Semaforo\Semaforo.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"35
+"42
 } 0
-"15
+"22
 [v _configuracao configuracao `(v  1 e 1 0 ]
 {
-"18
+"25
 } 0

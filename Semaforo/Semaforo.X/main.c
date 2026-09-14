@@ -11,6 +11,13 @@
 #include <xc.h>
 
 #define _XTAL_FREQ 4000000
+#define verde  PORTB = 0x04
+#define amarelo PORTB = 0x02
+#define vermelho PORTB = 0x01
+#define tempo_verde __delay_ms(2500)
+#define tempo_amarelo __delay_ms(500)
+#define tempo_vermelho __delay_ms(1500)
+
 
 void configuracao()
 {
@@ -23,12 +30,12 @@ void main(void)
     
     for(;;)
     {
-        PORTB = 0x04;
-        __delay_ms(1500);
-        PORTB = 0x02;
-        __delay_ms(500);
-        PORTB = 0x01;
-        __delay_ms(1500);
+        verde;
+        tempo_verde;
+        amarelo;
+        tempo_amarelo;
+        vermelho;
+        tempo_vermelho;
     }
     
     return;
