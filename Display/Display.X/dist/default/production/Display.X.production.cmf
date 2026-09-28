@@ -11,13 +11,16 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+$C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
 end_init CODE 0 0 0 1 2 1
 config CONFIG 4 2007 2007 1 2 1
 $dist/default/production\Display.X.production.o
-cinit CODE 0 7FE 7FE 2 2 1
-text1 CODE 0 7F3 7F3 4 2 1
-maintext CODE 0 7F7 7F7 7 2 1
+cinit CODE 0 7D6 7D6 2A 2 1
+text1 CODE 0 762 762 4 2 1
+maintext CODE 0 77A 77A 5C 2 1
+cstackCOMMON COMMON 1 70 70 7 1 1
+idataBANK0 CODE 0 766 766 14 2 1
+dataBANK0 BANK0 1 20 20 14 1 1
 config CONFIG 4 2007 2007 1 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -25,24 +28,24 @@ config CONFIG 4 2007 2007 1 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 20-6F 1
+RAM 34-6F 1
 RAM A0-EF 1
 RAM 120-14F 1
-BANK0 20-6F 1
+BANK0 34-6F 1
 BANK1 A0-EF 1
 BANK2 120-14F 1
-CONST 1-7F2 2
-ENTRY 1-7F2 2
+CONST 1-761 2
+ENTRY 1-761 2
 IDLOC 2000-2003 2
-CODE 1-7F2 2
+CODE 1-761 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
 SFR3 180-1EF 1
-COMMON 70-7D 1
+COMMON 77-7D 1
 EEDATA 2100-217F 2
-STRCODE 1-7F2 2
-STRING 1-7F2 2
+STRCODE 1-761 2
+STRING 1-761 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -57,18 +60,70 @@ STRING 1-7F2 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Display.X.production.o
-7FE cinit CODE >261:C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_1.s
-7FE cinit CODE >264:C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_1.s
-7FE cinit CODE >270:C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_1.s
-7FE cinit CODE >272:C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_1.s
-7FF cinit CODE >273:C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_1.s
-7F3 text1 CODE >17:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7F3 text1 CODE >19:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7F6 text1 CODE >20:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7F7 maintext CODE >22:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7F7 maintext CODE >24:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7F8 maintext CODE >28:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
-7FC maintext CODE >29:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7D6 cinit CODE >299:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7D6 cinit CODE >302:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7D6 cinit CODE >316:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7D7 cinit CODE >317:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7D8 cinit CODE >318:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7D9 cinit CODE >319:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DA cinit CODE >320:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DB cinit CODE >321:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DC cinit CODE >322:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DD cinit CODE >323:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DE cinit CODE >324:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7DF cinit CODE >325:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E0 cinit CODE >326:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E1 cinit CODE >327:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E2 cinit CODE >328:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E3 cinit CODE >329:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E4 cinit CODE >330:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E5 cinit CODE >331:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E6 cinit CODE >332:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E7 cinit CODE >333:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E8 cinit CODE >334:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7E9 cinit CODE >335:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7EA cinit CODE >336:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7EB cinit CODE >337:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7EC cinit CODE >338:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7ED cinit CODE >339:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7EE cinit CODE >340:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7EF cinit CODE >341:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F0 cinit CODE >342:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F1 cinit CODE >343:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F2 cinit CODE >344:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F3 cinit CODE >345:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F4 cinit CODE >346:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F5 cinit CODE >347:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F6 cinit CODE >348:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F7 cinit CODE >349:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F8 cinit CODE >350:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7F9 cinit CODE >351:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FA cinit CODE >352:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FB cinit CODE >353:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FC cinit CODE >354:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FD cinit CODE >355:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FE cinit CODE >361:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FE cinit CODE >363:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+7FF cinit CODE >364:C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_1.s
+762 text1 CODE >22:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+762 text1 CODE >24:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+765 text1 CODE >25:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+77A maintext CODE >27:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+77A maintext CODE >29:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+77B maintext CODE >32:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+77D maintext CODE >34:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+787 maintext CODE >35:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+794 maintext CODE >36:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+796 maintext CODE >36:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+79F maintext CODE >36:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7A3 maintext CODE >36:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7A7 maintext CODE >37:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7A9 maintext CODE >39:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7B4 maintext CODE >40:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7C1 maintext CODE >41:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7C3 maintext CODE >41:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7CC maintext CODE >41:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
+7D0 maintext CODE >41:C:\Users\rever\Documents\github\Microcontroladores\Display\Display.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -82,35 +137,40 @@ $dist/default/production\Display.X.production.o
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 0 0 ABS 0 - dist/default/production\Display.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
 __Hspace_0 800 0 ABS 0 - -
-__Hspace_1 0 0 ABS 0 - -
+__Hspace_1 77 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
 __L__absolute__ 0 0 ABS 0 __absolute__ -
+main@i 73 0 COMMON 1 cstackCOMMON dist/default/production\Display.X.production.o
 __Hstrings 0 0 ABS 0 strings -
-___sp 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-_main FEE 0 CODE 0 maintext dist/default/production\Display.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+_main EF4 0 CODE 0 maintext dist/default/production\Display.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\Display.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-start 0 0 CODE 0 init C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
 __Hpowerup 0 0 CODE 0 powerup -
-intlevel0 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
 wtemp0 7E 0 ABS 0 - dist/default/production\Display.X.production.o
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 0 0 ABS 0 clrtext -
+_display 20 0 BANK0 1 dataBANK0 dist/default/production\Display.X.production.o
 __Lmaintext 0 0 ABS 0 maintext -
-___stackhi 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-start_initialization FFC 0 CODE 0 cinit dist/default/production\Display.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+start_initialization FAC 0 CODE 0 cinit dist/default/production\Display.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -124,7 +184,7 @@ __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
 __Lbank3 0 0 BANK3 1 bank3 -
-__Lcinit FFC 0 CODE 0 cinit -
+__Lcinit FAC 0 CODE 0 cinit -
 __Lstack 0 0 STACK 2 stack -
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
@@ -148,14 +208,16 @@ __Lsivt 0 0 CODE 0 sivt -
 __Ltext 0 0 ABS 0 text -
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 __S0 800 0 ABS 0 - -
-__S1 0 0 ABS 0 - -
+__S1 77 0 ABS 0 - -
 __S3 0 0 ABS 0 - -
 __Lintentry 0 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\Display.X.production.o
 ltemp0a 80 0 ABS 0 - dist/default/production\Display.X.production.o
-__pmaintext FEE 0 CODE 0 maintext dist/default/production\Display.X.production.o
+__pmaintext EF4 0 CODE 0 maintext dist/default/production\Display.X.production.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
+main@i_39 75 0 COMMON 1 cstackCOMMON dist/default/production\Display.X.production.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
@@ -167,32 +229,34 @@ end_of_initialization FFC 0 CODE 0 cinit dist/default/production\Display.X.produ
 __Hintentry 0 0 CODE 0 intentry -
 __Lstrings 0 0 ABS 0 strings -
 __Hreset_vec 0 0 CODE 0 reset_vec -
-_configuracao FE6 0 CODE 0 text1 dist/default/production\Display.X.production.o
-__ptext1 FE6 0 CODE 0 text1 dist/default/production\Display.X.production.o
+_configuracao EC4 0 CODE 0 text1 dist/default/production\Display.X.production.o
+__ptext1 EC4 0 CODE 0 text1 dist/default/production\Display.X.production.o
 __Lpowerup 0 0 CODE 0 powerup -
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
 __Lreset_vec 0 0 CODE 0 reset_vec -
-___heap_hi 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+___heap_hi 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
 __end_of__initialization FFC 0 CODE 0 cinit dist/default/production\Display.X.production.o
 __Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 ECC 0 CODE 0 idataBANK0 dist/default/production\Display.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext -
-__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\Display.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Display.X.production.o
 wtemp0a 7F 0 ABS 0 - dist/default/production\Display.X.production.o
 __Hend_init 2 0 CODE 0 end_init -
-__end_of_main FFC 0 CODE 0 maintext dist/default/production\Display.X.production.o
-__end_of_configuracao FEE 0 CODE 0 text1 dist/default/production\Display.X.production.o
+__end_of_main FAC 0 CODE 0 maintext dist/default/production\Display.X.production.o
+__end_of_configuracao ECC 0 CODE 0 text1 dist/default/production\Display.X.production.o
 _PORTB 6 0 ABS 0 - dist/default/production\Display.X.production.o
 _TRISB 86 0 ABS 0 - dist/default/production\Display.X.production.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__initialization FFC 0 CODE 0 cinit dist/default/production\Display.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FAC 0 CODE 0 cinit dist/default/production\Display.X.production.o
 btemp0 7E 0 ABS 0 - dist/default/production\Display.X.production.o
 btemp1 7F 0 ABS 0 - dist/default/production\Display.X.production.o
 ttemp0a 7F 0 ABS 0 - dist/default/production\Display.X.production.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\driver_tmp_12.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs6y4.0\driver_tmp_12.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -218,10 +282,13 @@ ___int_stack_lo 0 0 STACK 2 stack C:\Users\rever\AppData\Local\Temp\xcAs404.0\dr
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7FE FFC 2 2
-text1 0 7F3 FE6 4 2
-maintext 0 7F7 FEE 7 2
+cinit 0 7D6 FAC 2A 2
+text1 0 762 EC4 4 2
+maintext 0 77A EF4 5C 2
+cstackCOMMON 1 70 70 7 1
 reset_vec 0 0 0 1 2
+idataBANK0 0 766 ECC 14 2
+dataBANK0 1 20 20 14 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

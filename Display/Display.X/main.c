@@ -12,7 +12,12 @@
 
 #define _XTAL_FREQ 4000000
 
+int display[10] = {0xee, 0x28, 0xcd, 0x6d, 0x2b, 0x67, 0xe7, 0x2c, 0xef, 0x2f};
 
+// L1 - 1110 1110 - ee - 0 D0
+// L2 - 1111 1110 - fe - 0 D1
+// L3 - 0001 0000 - 10
+// L1 + L3 = 1111 1110
 
 void configuracao()
 {
@@ -22,10 +27,18 @@ void configuracao()
 void main(void) 
 {
     configuracao();
-    
     for(;;)
     {
-        PORTB = 0x7D;
+        for (int i = 0; i < 10; i++)
+        {
+            PORTB = display[i];
+            __delay_ms(200);
+        }
+        for (int i = 0; i < 10; i++)
+        {
+            PORTB = display[i] | 0x10;
+            __delay_ms(200);
+        }
     }
     
     return;
