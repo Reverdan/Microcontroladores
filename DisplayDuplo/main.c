@@ -26,15 +26,29 @@ void configuracao()
 
 void main(void) 
 {
+    int valor = 0;
+    int dezena = 0;
+    int unidade = 0;
+    int tempo = 0;
     configuracao();
     for (;;) 
     {
-        PORTB = display[3];
-        __delay_ms(300);
-        PORTB = display[7] | 0x10;
-        __delay_ms(300);
-
+        PORTB = display[dezena];
+        __delay_ms(50);
+        PORTB = display[unidade] | 0x10;
+        __delay_ms(50);
+        
+        tempo++;
+        
+        if (tempo == 5)
+        {
+            tempo = 0;
+            valor ++;
+            if (valor > 99) valor = 0;
+            dezena = valor / 10;
+            unidade = valor - (dezena * 10);
+        }
+        
     }
-
     return;
 }
