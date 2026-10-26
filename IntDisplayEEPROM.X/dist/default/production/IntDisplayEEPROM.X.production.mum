@@ -1,0 +1,8 @@
+
+16F628A Memory Summary:
+    Program space        used   19Eh (   414) of   800h words   ( 20.2%)
+    Data space           used    2Dh (    45) of    E0h bytes   ( 20.1%)
+    EEPROM space         used     0h (     0) of    80h bytes   (  0.0%)
+    Configuration bits   used     1h (     1) of     1h word    (100.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+
